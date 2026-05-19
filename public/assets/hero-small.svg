@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="20" rx="18" width="260" height="320" fill="#f8fafc" stroke="#e6eefc"/>
+  <rect x="320" y="60" rx="12" width="260" height="200" fill="#f8fafc" stroke="#e6eefc"/>
+
+  <!-- left phone checklist -->
+  <rect x="50" y="60" rx="8" width="200" height="40" fill="#ecfeff"/>
+  <rect x="50" y="115" rx="8" width="200" height="40" fill="#eef2ff"/>
+  <rect x="50" y="170" rx="8" width="200" height="40" fill="#ecfeff"/>
+
+  <!-- check marks -->
+  <circle cx="80" cy="80" r="12" fill="url(#g1)" />
+  <path d="M74 80 L79 85 L90 72" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <circle cx="80" cy="135" r="12" fill="#94a3b8" />
+  <path d="M74 135 L79 140 L90 127" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <circle cx="80" cy="190" r="12" fill="url(#g1)" />
+  <path d="M74 190 L79 195 L90 182" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- right laptop note -->
+  <rect x="350" y="80" rx="8" width="180" height="36" fill="#f1f5f9"/>
+  <rect x="350" y="130" rx="8" width="180" height="110" fill="#ffffff"/>
+  <rect x="367" y="148" rx="6" width="140" height="18" fill="#eef2ff"/>
+  <rect x="367" y="176" rx="6" width="110" height="12" fill="#f1f5f9"/>
+  <rect x="367" y="196" rx="6" width="140" height="12" fill="#f1f5f9"/>
+
+  <!-- subtle background shapes -->
+  <circle cx="420" cy="300" r="80" fill="#eff6ff" opacity="0.6" />
+  <circle cx="120" cy="300" r="60" fill="#eff6ff" opacity="0.35" />
+</svg>
