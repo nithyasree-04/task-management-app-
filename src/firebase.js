@@ -5,14 +5,29 @@ import { getFirestore } from 'firebase/firestore'
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyBweRyZCIoM6v3VA2LZCoi_fgZrE9lqrZE',
-  authDomain: 'task-management-app-c5939.firebaseapp.com',
-  projectId: 'task-management-app-c5939',
-  storageBucket: 'task-management-app-c5939.firebasestorage.app',
-  messagingSenderId: '649960394905',
-  appId: '1:649960394905:web:cc7cd56daf7ba1e13a6808',
-  measurementId: 'G-FRB6DE55XG',
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 }
+
+const requiredFirebaseKeys = [
+  'apiKey',
+  'authDomain',
+  'projectId',
+  'storageBucket',
+  'messagingSenderId',
+  'appId',
+]
+
+requiredFirebaseKeys.forEach((key) => {
+  if (!firebaseConfig[key]) {
+    throw new Error(`Missing Firebase environment variable for ${key}. Check your .env file.`)
+  }
+})
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig)

@@ -42,9 +42,9 @@ export default function Login() {
             <rect width="800" height="1000" fill="url(#grid)"/>
             
             {/* Decorative task cards */}
-            <rect x="50" y="150" width="300" height="150" rx="12" fill="#ffffff" opacity="0.05" stroke="#ffffff" strokeWidth="1" opacity="0.1"/>
-            <rect x="450" y="100" width="280" height="180" rx="12" fill="#ffffff" opacity="0.05" stroke="#ffffff" strokeWidth="1" opacity="0.1"/>
-            <rect x="50" y="400" width="260" height="140" rx="12" fill="#ffffff" opacity="0.05" stroke="#ffffff" strokeWidth="1" opacity="0.1"/>
+            <rect x="50" y="150" width="300" height="150" rx="12" fill="#ffffff" opacity="0.1" stroke="#ffffff" strokeWidth="1"/>
+            <rect x="450" y="100" width="280" height="180" rx="12" fill="#ffffff" opacity="0.1" stroke="#ffffff" strokeWidth="1"/>
+            <rect x="50" y="400" width="260" height="140" rx="12" fill="#ffffff" opacity="0.1" stroke="#ffffff" strokeWidth="1"/>
           </svg>
         </div>
 
